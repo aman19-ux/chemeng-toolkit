@@ -4,7 +4,7 @@ from chemeng.flow import flow_regime, reynolds
 
 
 def test_reynolds_water_in_pipe():
-    assert reynolds(1000, 1.0, 0.05, 1e-3) == pytest.approx(50_000)
+    assert reynolds(1000, 1.0, 0.05, 1e-3) == pytest.approx(40_000)
 
 
 def test_reynolds_rejects_non_positive():

@@ -1,6 +1,6 @@
 # \## Running the tests
 
-# 
+# !\[tests](https://github.com/aman19-ux/chemeng-toolkit/actions/workflows/tests.yml/badge.svg)
 
 # ```
 

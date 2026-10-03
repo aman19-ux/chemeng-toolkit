@@ -11,3 +11,7 @@ python -m venv .venv
 .venv\Scripts\python -m pip install pytest
 .venv\Scripts\python -m pytest
 ```
+## Functions
+
+- `reynolds(rho, v, D, mu)`: Reynolds number for pipe flow (SI units)
+

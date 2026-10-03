@@ -1,14 +1,13 @@
-# \## Running the tests
+# chemeng-toolkit
 
-# !\[tests](https://github.com/aman19-ux/chemeng-toolkit/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/aman19-ux/chemeng-toolkit/actions/workflows/tests.yml/badge.svg)
 
-# ```
+Small, tested Python functions for common chemical engineering calculations.
 
-# python -m venv .venv
+## Running the tests
 
-# .venv\\Scripts\\python -m pip install pytest
-
-# .venv\\Scripts\\python -m pytest
-
-# ```
-
+```
+python -m venv .venv
+.venv\Scripts\python -m pip install pytest
+.venv\Scripts\python -m pytest
+```

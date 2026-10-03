@@ -13,4 +13,5 @@ python -m venv .venv
 ```
 ## Functions
 
+- `reynolds(rho, v, D, mu)`: Reynolds number for pipe flow (SI units)
 - `flow_regime(re)`: laminar, transitional or turbulent for a given Reynolds number

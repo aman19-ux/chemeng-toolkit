@@ -11,3 +11,6 @@ python -m venv .venv
 .venv\Scripts\python -m pip install pytest
 .venv\Scripts\python -m pytest
 ```
+## Functions
+
+- `flow_regime(re)`: laminar, transitional or turbulent for a given Reynolds number

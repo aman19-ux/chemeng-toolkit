@@ -17,3 +17,4 @@ python -m venv .venv
 - `flow_regime(re)`: laminar, transitional or turbulent for a given Reynolds number
 - `antoine_pressure(T, A, B, C)`: vapour pressure from the Antoine equation
 - `lmtd(dT1, dT2)`: log-mean temperature difference for a heat exchanger
+- `ideal_gas(P, V, n, T)`: solve PV = nRT for whichever variable is left out

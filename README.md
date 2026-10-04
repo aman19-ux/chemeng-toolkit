@@ -15,3 +15,5 @@ python -m venv .venv
 
 - `reynolds(rho, v, D, mu)`: Reynolds number for pipe flow (SI units)
 - `flow_regime(re)`: laminar, transitional or turbulent for a given Reynolds number
+- `antoine_pressure(T, A, B, C)`: vapour pressure from the Antoine equation
+- `lmtd(dT1, dT2)`: log-mean temperature difference for a heat exchanger

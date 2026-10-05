@@ -18,3 +18,6 @@ python -m venv .venv
 - `antoine_pressure(T, A, B, C)`: vapour pressure from the Antoine equation
 - `lmtd(dT1, dT2)`: log-mean temperature difference for a heat exchanger
 - `ideal_gas(P, V, n, T)`: solve PV = nRT for whichever variable is left out
+- `pump_power(rho, Q, H, efficiency)`: pump shaft power from flow and head
+- `darcy_friction(re, rel_roughness)`: Darcy friction factor (laminar or Colebrook)
+- `operating_line(Ls, Gs, X1, Y1)`: absorber operating line in solute-free mole ratios

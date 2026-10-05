@@ -21,7 +21,7 @@ def darcy_friction(re, rel_roughness, tol=1e-10, max_iter=100):
     Laminar (Re < 2300): f = 64 / Re.
     Otherwise solves the Colebrook equation by fixed-point iteration on x = 1/sqrt(f):
         x = -2 log10(rel_roughness / 3.7 + 2.51 x / Re)
-    rel_roughness is epsilon / D (dimensionless).
+    rel_roughness is epsilon / D (dimensionless).powe
     """
     if re <= 0 or rel_roughness < 0:
         raise ValueError("Re must be positive and roughness non-negative")
@@ -34,3 +34,13 @@ def darcy_friction(re, rel_roughness, tol=1e-10, max_iter=100):
             return 1 / x_new**2
         x = x_new
     raise RuntimeError("Colebrook iteration did not converge")
+
+G = 9.80665  # m/s2, standard gravity (exact by definition)
+
+
+def pump_power(rho, Q, H, efficiency):
+    """Shaft power in W to deliver flow Q (m3/s) against head H (m)."""
+    if not 0 < efficiency <= 1:
+        raise ValueError("efficiency must be in (0, 1]")
+    return rho * G * Q * H / efficiency
+

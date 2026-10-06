@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemeng-toolkit"
+dynamic = ["version"]
+description = "Small, tested Python functions for common chemical engineering calculations."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Aman" }]
+
+[project.urls]
+Repository = "https://github.com/aman19-ux/chemeng-toolkit"
+
+[tool.setuptools]
+packages = ["chemeng"]
+
+[tool.setuptools.dynamic]
+version = { attr = "chemeng.__version__" }
